@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+
+  redis-dev-service:
+    container_name: redis-dev-service
+    image: redis:7.0.5
+    restart: always
+    command: redis-server --appendonly yes
+    ports:
+      - "6390:6379"
+
