@@ -3,7 +3,7 @@
 
 ## Run Project on local with Docker
 
-Run depends services.
+Run single Redis Service.
 ```bash
   docker-compose -f .\docker-compose-dev.yaml up -d  
 ``` 
@@ -18,6 +18,7 @@ Build.
 ```bash
    mvn clean package -P prod
 ```
+Run Redis Cluster and Spring App.
 ```bash
    docker-compose up -d
 ```
